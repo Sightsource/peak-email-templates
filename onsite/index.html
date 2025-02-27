@@ -52,15 +52,13 @@
         color: white;
         padding: 12px 20px;
         text-align: left;
+        font-size: 15px;
       }
 
       .download-section {
         background-color: #2e1a47;
         text-align: center;
         padding: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
 
       .download-text {
@@ -69,6 +67,12 @@
         font-size: 15px;
         padding-right: 10px;
         max-width: 65%;
+      }
+
+      .download-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
       }
 
       .download-section a {
@@ -112,17 +116,6 @@
 
         ul {
           padding-left: 12px;
-        }
-
-        .download-section {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .download-text {
-          max-width: 100%;
-          padding-right: 0;
-          margin-bottom: 8px;
         }
       }
     </style>
@@ -226,35 +219,61 @@
 
       <tr>
         <td class="download-section">
-          <div class="download-text">
-            <p>
-              Remember that your [PROGRAM NAME] medical credit depends on
-              completing all the steps noted above before your appointment to
-              avoid lowering your phase score and subsequent medical credit.
-              [PROGRAM NAME] makes these steps easy to complete.
-            </p>
-            <p>
-              Download our
-              <a
-                href="https://peak-health.net/Content/PDF/PreparingForYourLifeForceAppointment.pdf"
-                target="_blank"
-                style="color: white; font-style: italic"
-                >Preparing for your LifeForce Appointment</a
-              >
-              guide and review for more details.
-            </p>
-          </div>
-          <a
-            href="https://peak-health.net/Content/PDF/PreparingForYourLifeForceAppointment.pdf"
+          <table
+            role="presentation"
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
           >
-            <img
-              src="PH_NurseAppt_GUIDE_CVR_0522-2.jpg"
-              alt="Download the Preparing for Your LifeForce Appointment Guide today!"
-              width="130"
-            />
-          </a>
+            <tr>
+              <td
+                class="download-text"
+                width="70%"
+                align="center"
+                style="
+                  vertical-align: middle;
+                  text-align: left;
+                  padding-right: 10px;
+                "
+              >
+                <p>
+                  Remember that your [PROGRAM NAME] medical credit depends on
+                  completing all the steps noted above before your appointment
+                  to avoid lowering your phase score and subsequent medical
+                  credit. [PROGRAM NAME] makes these steps easy to complete.
+                </p>
+                <p>
+                  Download our
+                  <a
+                    href="https://peak-health.net/Content/PDF/PreparingForYourLifeForceAppointment.pdf"
+                    target="_blank"
+                    style="color: white; font-style: italic"
+                  >
+                    Preparing for your LifeForce Appointment
+                  </a>
+                  guide and review for more details.
+                </p>
+              </td>
+
+              <td width="30%" align="center" style="vertical-align: middle">
+                <a
+                  href="https://peak-health.net/Content/PDF/PreparingForYourLifeForceAppointment.pdf"
+                >
+                  <img
+                    src="PH_NurseAppt_GUIDE_CVR_0522-2.jpg"
+                    alt="Download the Preparing for Your LifeForce Appointment Guide today!"
+                    width="130"
+                    class="download-image"
+                    style="display: block; margin: auto"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
+
       <tr>
         <td class="appointment-details">
           <p style="text-decoration-line: underline">
